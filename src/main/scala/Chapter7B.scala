@@ -8,4 +8,5 @@ object Chapter7B extends App {
   println(FromHorstmann.value)
   println(FromImpatient.value)
 
+
 }

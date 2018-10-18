@@ -1,6 +1,3 @@
-import _root_.com.horstmann.impatient.game
-import com.horstmann.impatient.game.com
-
 import scala.collection.JavaConverters.mapAsScalaMapConverter
 package com {
 

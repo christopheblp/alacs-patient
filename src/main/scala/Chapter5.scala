@@ -13,7 +13,7 @@ object Chapter5 extends App {
   val person = new Person("Uchiha", 23)
   println(person.age)
 
-  val bankAccount = new BankAccount(0)
+  val bankAccount = new BankAccount2(0)
   bankAccount.deposit(10)
   println(bankAccount.balance)
 
@@ -68,7 +68,7 @@ class Counter(private var value: Int = 0) {
 
 }
 
-class BankAccount(private var amount: Int) {
+class BankAccount2(private var amount: Int) {
 
   def deposit(money: Int) {
     amount -= money
@@ -130,7 +130,7 @@ class Employee(val name: String, var salary: Double) {
 }
 
 class Employee2 {
-  private var _name = "John Q. Public" // we add _ because we want a getter named name
+  private var _name = "John Q. Public" // we add _ because we want a getter named "name"
   var salary = 0.0
 
   def this(n: String, s: Double) {
