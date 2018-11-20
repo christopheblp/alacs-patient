@@ -82,8 +82,8 @@ class BankAccount2(private var amount: Int) {
 
 }
 
-class Person(var name: String, var age: Int) {
-  if (age < 0) age = 0
+class Person(private var name: String, val age: Int) {
+  //if (age < 0) age = 0
 }
 
 class Person2(str: String) {

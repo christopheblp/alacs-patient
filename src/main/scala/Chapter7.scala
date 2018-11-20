@@ -106,5 +106,3 @@ object Test4 extends App {
   } while (!(password.equals("secret")))
   println("Congrats")
 }
-
-

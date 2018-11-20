@@ -1,10 +1,12 @@
+import Cards.Cards
+
 object Chapter6 extends App {
   println(Conversions.gallonsToLiters(2.12))
 
   var point = Point(2, 3)
   println(Cards.carreau)
 
-  def isRed(card: Cards.Value): Boolean = {
+  def isRed(card: Cards): Boolean = {
     card == Cards.coeur || card == Cards.carreau
   }
 
@@ -54,6 +56,7 @@ object Point {
 }
 
 object Cards extends Enumeration {
+  type Cards = Cards.Value
   val pique = Value("♠")
   val trefle = Value("♣")
   val coeur = Value("♥")
@@ -62,6 +65,7 @@ object Cards extends Enumeration {
 }
 
 object RGB extends Enumeration {
+  type RGB = Value
   val Black = Value(0x000000)
   val White = Value(0xffffff)
   val Red = Value(0xff0000)
@@ -71,4 +75,3 @@ object RGB extends Enumeration {
   val Cyan = Value(0x00ffff)
   val Magenta = Value(0xff00ff)
 }
-
